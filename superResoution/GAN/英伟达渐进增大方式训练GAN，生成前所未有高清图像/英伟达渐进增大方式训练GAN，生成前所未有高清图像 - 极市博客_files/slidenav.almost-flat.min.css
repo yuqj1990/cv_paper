@@ -1,0 +1,45 @@
+.uk-slidenav {
+	width: 60px; height: 60px; text-align: center; color: rgba(50, 50, 50, 0.4); line-height: 60px; font-size: 60px; display: inline-block; box-sizing: border-box;
+}
+.uk-slidenav:focus {
+	outline: 0px; color: rgba(50, 50, 50, 0.7); text-decoration: none; cursor: pointer;
+}
+.uk-slidenav:hover {
+	outline: 0px; color: rgba(50, 50, 50, 0.7); text-decoration: none; cursor: pointer;
+}
+.uk-slidenav:active {
+	color: rgba(50, 50, 50, 0.9);
+}
+.uk-slidenav-previous::before {
+	font-family: FontAwesome; content: "\f104";
+}
+.uk-slidenav-next::before {
+	font-family: FontAwesome; content: "\f105";
+}
+.uk-slidenav-position {
+	position: relative;
+}
+.uk-slidenav-position .uk-slidenav {
+	top: 50%; margin-top: -30px; display: none; position: absolute; z-index: 1;
+}
+.uk-slidenav-position:hover .uk-slidenav {
+	display: block;
+}
+.uk-slidenav-position .uk-slidenav-previous {
+	left: 20px;
+}
+.uk-slidenav-position .uk-slidenav-next {
+	right: 20px;
+}
+.uk-slidenav-contrast {
+	color: rgba(255, 255, 255, 0.5);
+}
+.uk-slidenav-contrast:focus {
+	color: rgba(255, 255, 255, 0.7);
+}
+.uk-slidenav-contrast:hover {
+	color: rgba(255, 255, 255, 0.7);
+}
+.uk-slidenav-contrast:active {
+	color: rgba(255, 255, 255, 0.9);
+}

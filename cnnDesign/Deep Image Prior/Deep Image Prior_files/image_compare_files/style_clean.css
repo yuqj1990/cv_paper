@@ -1,0 +1,84 @@
+BODY {
+	FONT-SIZE: 11pt; HEIGHT: 100%; FONT-FAMILY: 'Open Sans', sans-serif; COLOR: #444; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+.icon-block {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+.icon-block .material-icons {
+	
+}
+.author {
+	FONT-SIZE: 16pt
+}
+.school {
+	FONT-SIZE: 12pt
+}
+.title {
+	FONT-SIZE: 20pt; FONT-WEIGHT: bold
+}
+.subtitle {
+	FONT-SIZE: 14pt; FONT-WEIGHT: bold; FONT-STYLE: italic
+}
+PRE {
+	FONT-SIZE: 12pt; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; border-radius: 10px
+}
+.loading {
+	BACKGROUND: url(http://thinkfuture.com/wp-content/uploads/2013/10/loading_spinner.gif) no-repeat center 50%
+}
+.fa-folder-open {
+	COLOR: #f4d275
+}
+.footer-copyright {
+	BACKGROUND-COLOR: #e0e0e0
+}
+TABLE TD {
+	VERTICAL-ALIGN: middle; POSITION: relative; PADDING-BOTTOM: 5px; TEXT-ALIGN: center; PADDING-TOP: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px
+}
+.shadow {
+	MARGIN-BOTTOM: 10px; -webkit-box-shadow: 5px 5px 5px #aaa; box-shadow: 0px 0px 10px #aaa; -moz-box-shadow: 5px 5px 5px #aaa
+}
+.learned {
+	
+}
+.ours {
+	FONT-WEIGHT: 600
+}
+.select_label {
+	FONT-WEIGHT: 400 !important; COLOR: #a00 !important
+}
+.caption {
+	MARGIN-BOTTOM: 10px; FONT-SIZE: 12pt; TEXT-ALIGN: center; MARGIN-TOP: 20px
+}
+.method-tag {
+	FONT-SIZE: 12pt; COLOR: #337ab7; PADDING-BOTTOM: 3pt !important
+}
+.method-tag:hover {
+	CURSOR: pointer; COLOR: red !important
+}
+UL.select-dropdown.dropdown-content LI SPAN {
+	FONT-WEIGHT: 600; COLOR: #444
+}
+.img_selector {
+	TEXT-ALIGN: center
+}
+.demo-img {
+	MIN-HEIGHT: 450px !important
+}
+.note {
+	FONT-SIZE: 12pt
+}
+.row {
+	MARGIN-BOTTOM: 0pt
+}
+.emphasis {
+	FONT-SIZE: 13pt; FONT-WEIGHT: bold; COLOR: red
+}
+.row-centered {
+	TEXT-ALIGN: center
+}
+.col-centered {
+	MIN-WIDTH: 170px; FLOAT: none !important; TEXT-ALIGN: center; DISPLAY: inline-block; MARGIN-RIGHT: -4px
+}
+.mmw {
+	MAX-WIDTH: 150px; MIN-WIDTH: 100px; FONT-WEIGHT: 600 !important
+}

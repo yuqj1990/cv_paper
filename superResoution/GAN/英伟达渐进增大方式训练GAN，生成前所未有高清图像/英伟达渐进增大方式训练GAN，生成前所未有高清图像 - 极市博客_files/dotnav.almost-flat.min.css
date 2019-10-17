@@ -1,0 +1,54 @@
+.uk-dotnav {
+	list-style: none; padding: 0px; margin-top: -15px; margin-left: -15px; display: flex; flex-wrap: wrap; -webkit-flex-wrap: wrap;
+}
+.uk-dotnav > * {
+	flex:0 0 auto; padding-left: 15px; margin-top: 15px; -webkit-flex: none;
+}
+.uk-dotnav::after {
+	overflow: hidden; display: block; content: "";
+}
+.uk-dotnav::before {
+	overflow: hidden; display: block; content: "";
+}
+.uk-dotnav::after {
+	clear: both;
+}
+.uk-dotnav > * {
+	float: left;
+}
+.uk-dotnav > * > * {
+	background: rgba(50, 50, 50, 0.1); border-radius: 50%; transition:0.2s ease-in-out; width: 20px; height: 20px; text-indent: 100%; overflow: hidden; display: block; white-space: nowrap; box-sizing: content-box; -webkit-transition: all .2s ease-in-out;
+}
+.uk-dotnav > * > :focus {
+	background: rgba(50, 50, 50, 0.4); outline: 0px;
+}
+.uk-dotnav > * > :hover {
+	background: rgba(50, 50, 50, 0.4); outline: 0px;
+}
+.uk-dotnav > * > :active {
+	background: rgba(50, 50, 50, 0.6);
+}
+.uk-dotnav > .uk-active > * {
+	background: rgba(50, 50, 50, 0.4); transform: scale(1.3); -webkit-transform: scale(1.3);
+}
+.uk-dotnav-contrast > * > * {
+	background: rgba(255, 255, 255, 0.4);
+}
+.uk-dotnav-contrast > * > :focus {
+	background: rgba(255, 255, 255, 0.7);
+}
+.uk-dotnav-contrast > * > :hover {
+	background: rgba(255, 255, 255, 0.7);
+}
+.uk-dotnav-contrast > * > :active {
+	background: rgba(255, 255, 255, 0.9);
+}
+.uk-dotnav-contrast > .uk-active > * {
+	background: rgba(255, 255, 255, 0.9);
+}
+.uk-dotnav-vertical {
+	flex-direction: column; -webkit-flex-direction: column;
+}
+.uk-dotnav-vertical > * {
+	float: none;
+}

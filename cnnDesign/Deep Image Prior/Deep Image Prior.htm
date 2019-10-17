@@ -1,0 +1,427 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0048)https://dmitryulyanov.github.io/deep_image_prior -->
+<HTML lang=en><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>Deep Image Prior</TITLE>
+<STYLE type=text/css>* {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+.container {
+	FONT-SIZE: 11pt; FONT-FAMILY: 'Open Sans', sans-serif; FONT-WEIGHT: 400; COLOR: #444; PADDING-BOTTOM: 0px; FONT-STYLE: normal; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px
+}
+BODY {
+	BACKGROUND-COLOR: #fafafa
+}
+.section {
+	PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+.title {
+	FONT-SIZE: 36pt; FONT-FAMILY: 'Roboto Condensed', sans-serif; FONT-WEIGHT: 700; COLOR: #444; PADDING-BOTTOM: 25px; PADDING-TOP: 10px; LINE-HEIGHT: 100%
+}
+.author {
+	FONT-SIZE: 13pt
+}
+.section_title {
+	FONT-SIZE: 24pt; FONT-FAMILY: 'Roboto Condensed', sans-serif; FONT-WEIGHT: 700; COLOR: #444; PADDING-BOTTOM: 10px; LINE-HEIGHT: 100%
+}
+.shadow {
+	MARGIN-BOTTOM: 10px; -webkit-box-shadow: 5px 5px 5px #aaa; -moz-box-shadow: 5px 5px 5px #aaa; box-shadow: 5px 5px 5px #aaa
+}
+.aff {
+	MARGIN-BOTTOM: 16px; MAX-HEIGHT: 30px
+}
+.img_authors {
+	MAX-WIDTH: 130px; POSITION: relative; MAX-HEIGHT: 130px
+}
+.img_links {
+	MAX-WIDTH: 70px; POSITION: relative; MAX-HEIGHT: 70px
+}
+.text {
+	OVERFLOW: hidden; POSITION: relative; LINE-HEIGHT: 2em
+}
+.fadingEffect {
+	WIDTH: 100%; BACKGROUND: #fffafa; RIGHT: 0px; POSITION: absolute; TOP: 0px; BOTTOM: 0px; -moz-animation: showHide 5s ease-in alternate infinite; -webkit-animation: showHide 5s ease-in alternate infinite; -ms-animation: showHide 5s ease-in alternate infinite; -o-animation: showHide 5s ease-in alternate infinite; animation: showHide 5s ease-in alternate infinite
+}
+#cf {
+	HEIGHT: 100%; WIDTH: 100%; POSITION: relative; MAX-HEIGHT: 301px
+}
+#cf IMG {
+	POSITION: absolute; LEFT: 0px; opacity: 0; -webkit-transition: opacity 1s ease-in-out; -moz-transition: opacity 1s ease-in-out; -o-transition: opacity 1s ease-in-out; transition: opacity 1s ease-in-out; animation-name: cfFadeInOut; animation-timing-function: ease-in-out; animation-iteration-count: infinite; animation-duration: 28s
+}
+UNKNOWN {
+	animation-delay: 24s
+}
+UNKNOWN {
+	animation-delay: 20s
+}
+UNKNOWN {
+	animation-delay: 16s
+}
+UNKNOWN {
+	animation-delay: 12s
+}
+UNKNOWN {
+	animation-delay: 8s
+}
+UNKNOWN {
+	animation-delay: 4s
+}
+UNKNOWN {
+	animation-delay: 0s
+}
+.row-centered {
+	TEXT-ALIGN: center
+}
+.col-centered {
+	MIN-WIDTH: 170px; FLOAT: none !important; TEXT-ALIGN: center; DISPLAY: inline-block; MARGIN-RIGHT: -4px
+}
+HTML {
+	HEIGHT: 100%; MARGIN: 0px
+}
+BODY {
+	HEIGHT: 100%; MARGIN: 0px
+}
+IFRAME {
+	BOX-SIZING: border-box; WIDTH: 100%
+}
+.hint {
+	MARGIN-BOTTOM: 10px; FONT-SIZE: 10pt; COLOR: #a00
+}
+.img-process {
+	MARGIN: 5px; MAX-HEIGHT: 200px; opacity: 1; -webkit-transition: opacity 0.2s ease-in-out; -moz-transition: opacity 0.2s ease-in-out; -o-transition: opacity 0.2s ease-in-out; transition: opacity 0.2s ease-in-out; -ms-transition: opacity 0.2s ease-in-out
+}
+.img-process:hover {
+	CURSOR: pointer; opacity: 0.6
+}
+.centeredd {
+	POSITION: fixed; LEFT: 50%; TOP: 50%; transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%)
+}
+</STYLE>
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+<META charset=utf-8>
+<META name=viewport 
+content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<META 
+content=https://raw.githubusercontent.com/DmitryUlyanov/deep-image-prior/master/data/teaser_compiled.png 
+property="og:image">
+<META content="Deep Image Prior" property="og:title"><!-- Latest compiled and minified CSS --><LINK 
+rel=stylesheet href="Deep%20Image%20Prior_files/bootstrap.min.css" 
+crossorigin="anonymous" 
+integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"><!-- Optional theme --><LINK 
+rel=stylesheet href="Deep%20Image%20Prior_files/bootstrap-theme.min.css" 
+crossorigin="anonymous" 
+integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"><!-- <link rel="stylesheet" href="../css/bootstrap-theme.min.css"> --><!-- Google fonts --><!-- <link href="../css/google-fonts.css" rel="stylesheet" type="text/css"> --><LINK 
+rel=stylesheet type=text/css href="Deep%20Image%20Prior_files/css.css"><!-- Photoswipe --><LINK 
+rel=stylesheet href="Deep%20Image%20Prior_files/photoswipe.css"><LINK 
+rel=stylesheet href="Deep%20Image%20Prior_files/default-skin.css">
+<SCRIPT type=text/x-mathjax-config>
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]},
+        TeX: { equationNumbers: { autoNumber: "AMS" } },
+      });
+      </SCRIPT>
+
+<SCRIPT type=text/javascript src="Deep%20Image%20Prior_files/MathJax.js" async>
+    </SCRIPT>
+
+<SCRIPT>
+  function resizeIframe(obj) {
+    obj.style.height = 0;
+    obj.style.height = (obj.contentWindow.document.body.scrollHeight + 5) + 'px';
+  }
+
+
+
+  
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+
+      function resize_iframe()
+      {
+        obj = document.getElementById("myiframe")
+
+        obj.style.height = 0;
+        obj.style.height = (obj.contentWindow.document.body.scrollHeight) + 'px';
+      }
+      window.onresize=resize_iframe; 
+    </SCRIPT>
+
+<META name=GENERATOR content="MSHTML 11.00.9600.18838"></HEAD>
+<BODY>
+<SCRIPT src="Deep%20Image%20Prior_files/zepto.min.js"></SCRIPT>
+
+<SCRIPT>
+    window.addEventListener('message', function(event) {
+      if(height = event.data['height']) {
+        $('iframe').css('height', height + 'px')
+      }
+    })
+  </SCRIPT>
+
+<DIV class=container><!-- ====================================================== --><!-- ===================== TITLE ========================== --><!-- ====================================================== -->
+<CENTER>
+<DIV class=title>Deep Image Prior</DIV></CENTER>
+<CENTER>
+<DIV class="row row-eq-height"><!-- <div class="col-sm-12"> -->
+<DIV class="col-sm-8 col-sm-offset-2">
+<DIV class=col-sm-4 
+style="MARGIN-BOTTOM: 5px"><!-- <div class="col-sm-12"> --><A 
+href="https://dmitryulyanov.github.io/about"><IMG 
+class="shadow img_authors img-circle img-responsive" 
+src="Deep%20Image%20Prior_files/dmitry_ulyanov.jpg"> 
+<DIV class=author><SPAN style="FONT-WEIGHT: 600">Dmitry 
+Ulyanov</SPAN><BR>Skoltech, Yandex</DIV></A><!-- </div> --></DIV>
+<DIV class=col-sm-4 
+style="MARGIN-BOTTOM: 5px"><!-- <div class="col-sm-12"> --><A 
+href="https://www.robots.ox.ac.uk/~vedaldi/"><IMG 
+class="shadow img_authors img-circle img-responsive" 
+src="Deep%20Image%20Prior_files/andrea_vedaldi.png"> 
+<DIV class=author><SPAN style="FONT-WEIGHT: 600">Andrea Vedaldi</SPAN><BR>Oxford 
+University</DIV></A><!-- </div> --></DIV>
+<DIV class=col-sm-4 
+style="MARGIN-BOTTOM: 5px"><!-- <div class="col-sm-12"> --><A 
+href="http://sites.skoltech.ru/compvision/members/vilem/"><IMG 
+class="shadow img_authors img-circle img-responsive" 
+src="Deep%20Image%20Prior_files/victor_lempitsky.jpg"> 
+<DIV class=author><SPAN style="FONT-WEIGHT: 600">Victor 
+Lempitsky</SPAN><BR>Skoltech</DIV></A><!-- </div> --></DIV></DIV><!-- </div> --></DIV></CENTER><!-- ====================================================== --><!-- ===================== TEASER ============== --><!-- ====================================================== --><BR>
+<CENTER>
+<DIV class="row section center row-eq-height">
+<DIV class="col center col-sm-8 col-sm-offset-2">
+<DIV id=cf>
+<CENTER><IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_01.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_02.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_03.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_04.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_05.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_06.png"> <IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/cropped_07.png"> </CENTER></DIV><SPAN 
+style="FONT-SIZE: 14px"><I>Example results on several image restoration 
+problems. We use deep neural networks, but we never train/pretrain them using 
+datasets. We use them as a structured image prior</I>. 
+</SPAN></DIV></DIV></CENTER><!-- ====================================================== --><!-- ===================== ABSTRACT ======================= --><!-- ====================================================== -->
+<DIV class="row section"><!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
+<DIV class=section_title>Abstract</DIV>
+<P><!-- style="text-indent: 30px" -->Deep convolutional networks have become a 
+popular tool for image generation and restoration. Generally, their excellent 
+performance is imputed to their ability to learn realistic image priors from a 
+large number of example images. In this paper, we show that, on the contrary, 
+the structure of a generator network is sufficient to capture a great deal of 
+low-level image statistics prior to any learning. In order to do so, we show 
+that a <B>randomly-initialized neural network can be used as a handcrafted prior 
+with excellent results in standard inverse problems such as denoising, 
+superresolution, and inpainting.</B> Furthermore, the same prior can be used to 
+invert deep neural representations to diagnose them, and to restore images based 
+on flash-no flash input pairs. </P>
+<P>Apart from its diverse applications, our approach highlights the inductive 
+bias captured by standard generator network architectures. It also bridges the 
+gap between two very popular families of image restoration methods: 
+learning-based methods using deep convolutional networks and learning-free 
+methods based on handcrafted image priors such as self-similarity. </P><!-- </div> --></DIV><!-- ====================================================== --><!-- ===================== LINKS ========================== --><!-- ====================================================== -->
+<CENTER>
+<DIV class="row section">
+<DIV class="col-sm-8 col-sm-offset-2"><!-- <div class="col-sm-12 center"> -->
+<DIV class=col-sm-4><!-- <div class="col-sm-12"> --><A 
+href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/12/deep_image_prior.pdf"><IMG 
+class="img_links img-responsive" src="Deep%20Image%20Prior_files/pdf.svg"> 
+<DIV class=author>Paper</DIV></A><!-- </div> --></DIV>
+<DIV class=col-sm-4><!-- <div class="col-sm-12"> --><A 
+href="https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM"><IMG 
+class="img_links img-responsive" src="Deep%20Image%20Prior_files/pdf.svg"> 
+<DIV class=author>Supmat</DIV></A><!-- </div> --></DIV>
+<DIV class=col-sm-4><!-- <div class="col-sm-12"> --><A 
+href="https://github.com/DmitryUlyanov/deep-image-prior"><IMG 
+class="img_links img-responsive" src="Deep%20Image%20Prior_files/github.svg"> 
+<DIV 
+class=author>Code</DIV></A><!-- </div> --></DIV><!-- </div> --></DIV></DIV></CENTER><!-- ====================================================== --><!-- ===================== Main idea ======================= --><!-- ====================================================== -->
+<DIV class="row section"><!-- <div class="col-xs-8 col-xs-offset-2 text-justify"> -->
+<DIV class=section_title>Main idea</DIV>
+<P><!-- style="text-indent: 30px" -->In image restoration problems the goal is 
+to recover original image $x$ having a corrupted image $x_0$. Such problems are 
+often formulated as an optimization task: <!-- <center>
+          <span style="width:100%; height: auto; display: block;padding: 0;margin: 0;"> -->\begin{equation}\label{eq1} 
+\min_x E(x; x_0) + R(x)\,, \end{equation} 
+<!--  </span>
+        </center>  -->where $E(x; x_0)$ is a <I>data term</I> and 
+$R(x)$ is an <I>image prior</I>. The data term $E(x; x_0)$ is usually easy to 
+design for a wide range of problems, such as super-resolution, denoising, 
+inpainting, while image prior $R(x)$ is a challenging one. Today's trend is to 
+capture the prior $R(x)$ with a ConvNet by training it using large number of 
+examples. </P>
+<P>We first notice, that for a surjective $g: \theta \mapsto x$ the following 
+procedure in theory is equivalent to \eqref{eq1}: $$\min_\theta E(g(\theta); 
+x_0) + R(g(\theta)) \,.$$ In practice $g$ dramatically changes how the image 
+space is searched by an optimization method. Furthermore, by selecting a "good" 
+(possibly injective) mapping $g$, we could get rid of the prior term. We define 
+$g(\theta)$ as $f_\theta(z)$, where $f$ is a deep ConvNet with parameters 
+$\theta$ and $z$ is a fixed input, leading to the formulation $$\min_\theta 
+E(f_\theta (z); x_0) \,.$$ Here, the network $f_\theta$ is initialized randomly 
+and input $z$ is filled with noise and fixed. </P>
+<P>In other words, <B>instead of searching for the answer in the image space we 
+now search for it in the space of neural network's parameters</B>. We emphasize 
+that we never use a pretrained network or an image database. Only corrupted 
+image $x_0$ is used in the restoration process. </P>
+<P>See <A 
+href="https://sites.skoltech.ru/app/data/uploads/sites/25/2017/11/deep_image_prior.pdf">paper</A> 
+and <A href="https://box.skoltech.ru/index.php/s/ib52BOoV58ztuPM">supplementary 
+material</A> for details. </P><!-- </div> --></DIV><!-- ====================================================== --><!-- ============== PhotoSwipe ============================ --><!-- ====================================================== --><!-- <div class="container"> -->
+<DIV role=dialog tabIndex=-1 aria-hidden=true class=pswp><!-- Background of PhotoSwipe. 
+               It's a separate element, as animating opacity is faster than rgba(). -->
+<DIV class=pswp__bg></DIV><!-- Slides wrapper with overflow:hidden. -->
+<DIV class=pswp__scroll-wrap><!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. --><!-- don't modify these 3 pswp__item elements, data is added later on. -->
+<DIV class=pswp__container>
+<DIV class=pswp__item></DIV>
+<DIV class=pswp__item></DIV>
+<DIV class=pswp__item></DIV></DIV><!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+<DIV class="pswp__ui pswp__ui--hidden">
+<DIV class=pswp__top-bar><!--  Controls are self-explanatory. Order can be changed. -->
+<DIV class=pswp__counter></DIV><BUTTON title="Close (Esc)" 
+class="pswp__button pswp__button--close"></BUTTON><BUTTON title=Share 
+class="pswp__button pswp__button--share"></BUTTON><BUTTON 
+title="Toggle fullscreen" class="pswp__button pswp__button--fs"></BUTTON><BUTTON 
+title="Zoom in/out" class="pswp__button pswp__button--zoom"></BUTTON> <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR --><!-- element will get class pswp__preloader- -active when preloader is running -->
+<DIV class=pswp__preloader>
+<DIV class=pswp__preloader__icn>
+<DIV class=pswp__preloader__cut>
+<DIV class=pswp__preloader__donut></DIV></DIV></DIV></DIV></DIV>
+<DIV class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<DIV class=pswp__share-tooltip></DIV></DIV><BUTTON title="Previous (arrow left)" 
+class="pswp__button pswp__button--arrow--left"></BUTTON><BUTTON 
+title="Next (arrow right)" 
+class="pswp__button pswp__button--arrow--right"></BUTTON> 
+<DIV class=pswp__caption>
+<DIV class=pswp__caption__center></DIV></DIV></DIV></DIV></DIV><!-- ====================================================== --><!-- ============== Restoration process =================== --><!-- ====================================================== -->
+<DIV class="row section">
+<DIV class=section_title>Visualization of restoration process </DIV>
+<P class=hint>Click on the image below and use left and right arrows or swipe. 
+</P><BR>
+<DIV id=methods_table class="row row-centered center" 
+style="MARGIN-BOTTOM: 15px">
+<DIV class="col-sm col-centered"><IMG id=process-snail 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_03.png"> </DIV>
+<DIV class="col-sm col-centered"><IMG id=process-library 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_05.png"> </DIV>
+<DIV class="col-sm col-centered"><IMG id=process-vase 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_08.png"> </DIV>
+<DIV class="col-sm col-centered"><IMG id=process-zebra 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_01.png"> </DIV>
+<DIV class="col-sm col-centered"><IMG id=process-F16 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_02.png"> </DIV>
+<DIV class="col-sm col-centered"><IMG id=process-lena 
+class="img-responsive img-process" 
+src="Deep%20Image%20Prior_files/cropped_04.png"> </DIV></DIV><BR><BR>
+<DIV class=section_title>Comparison with other methods</DIV><!-- <br> --></DIV><!-- ====================================================== --><!-- ============== Comparison ============================ --><!-- ====================================================== --></DIV><IFRAME 
+id=myiframe 
+style="BORDER-LEFT-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 100%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; MARGIN: 0px; PADDING-RIGHT: 0px; BORDER-TOP-WIDTH: 0px" 
+src="Deep%20Image%20Prior_files/image_compare.htm" scrolling=no></IFRAME>
+<DIV class=container><BR>
+<DIV class="row section" style="PADDING-BOTTOM: 0px">
+<DIV class=section_title>Methods in the comparison</DIV>
+<DIV style="FONT-SIZE: 10pt; MARGIN-LEFT: 35px"><!-- <p> -->
+<UL>
+  <LI>W. Lai, J. Huang, N. Ahuja and M. Yang, <A 
+  href="https://arxiv.org/abs/1704.03915">"Deep Laplacian Pyramid Networks for 
+  Fast and Accurate Super-Resolution"</A> CVPR, 2017 
+  <LI>C. Ledig, L. Theis, F. Huszar, J. Caballero, A. Cunningham, A. Acosta, A. 
+  Aitken, A. Tejani, J. Totz, Z. Wang and W. Shi, <A 
+  href="https://arxiv.org/abs/1609.04802">"Photo-realistic single image 
+  super-resolution using a generative adversarial network"</A> CVPR, 2017 
+  <LI>J. Huang, A. Singh and N. Ahuja, <A 
+  href="https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Huang_Single_Image_Super-Resolution_2015_CVPR_paper.pdf">"Single 
+  Image Super-Resolution from Transformed Self-Exemplars"</A> CVPR, 2015 
+  <LI>D. Glasner, S. Bagon, and M. Irani, <A 
+  href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.159.51&amp;rep=rep1&amp;type=pdf">"Super-resolution 
+  from a single image"</A> ICCV, 2009 
+  <LI>V. Papyan, Y. Romano, J. Sulam and M. Elad, <A 
+  href="https://arxiv.org/abs/1705.03239">"Convolutional dictionary learning via 
+  local processing"</A> ICCV, 2017 
+  <LI>K. Dabov, A. Foi, V. Katkovnik and K. Egiazarian, <A 
+  href="https://www.cs.tut.fi/~foi/GCF-BM3D/BM3D_TIP_2007.pdf">"Image Denoising 
+  by Sparse 3-D Transform-Domain Collaborative Filtering"</A> TIP, 2007 
+  <LI>A. Buades, B. Coll and J. M. Morel, <A 
+  href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.374.7899&amp;rep=rep1&amp;type=pdf">"A 
+  non-local algorithm for image denoising"</A> CVPR, 2005 
+  <LI>J. Ren, L. Xu, Q. Yan and W. Sun, <A 
+  href="https://papers.nips.cc/paper/5774-shepard-convolutional-neural-networks.pdf">"Shepard 
+  Convolutional Neural Networks"</A> NIPS, 2015 </LI></UL></DIV></DIV>
+<DIV class="row section">
+<DIV class=section_title>Acknowledgements</DIV>Dmitry Ulyanov and Victor 
+Lempitsky are supported by the Ministry of Education and Science of the Russian 
+Federation (grant 14.756.31.0001) and Andrea Vedaldi is supported by ERC 
+677195-IDIU. Interactive visualization is based on <A 
+href="http://graduatestudents.ucmerced.edu/wlai24/">Jason Lai</A>'s 
+visualization for <A href="http://vllab.ucmerced.edu/wlai24/LapSRN/">LapSRN</A>. 
+Images for <I>Glasner et al.</I> super-resolution method are taken from <A 
+href="https://sites.google.com/site/jbhuang0604/">Jia-Bin Huang</A>'s <A 
+href="https://github.com/jbhuang0604/SelfExSR">SelfExSR</A> repository. </DIV>
+<CENTER>
+<DIV class="row row-eq-height" style="MARGIN-BOTTOM: 30px; MARGIN-TOP: 10px">
+<DIV class=col-sm-4><A href="http://www.skoltech.ru/en/"><IMG 
+class=img-responsive src="Deep%20Image%20Prior_files/skoltech.png"> </A></DIV>
+<DIV class=col-sm-4><A href="https://yandex.com/company/"><IMG 
+class=" img-responsive" src="Deep%20Image%20Prior_files/yandex.png"> </A></DIV>
+<DIV class=col-sm-4><A href="http://www.ox.ac.uk/"><IMG class=img-responsive 
+src="Deep%20Image%20Prior_files/oxford.png"> </A></DIV></DIV></CENTER></DIV><!-- Optional JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<SCRIPT src="Deep%20Image%20Prior_files/jquery-3.2.1.slim.min.js" 
+crossorigin="anonymous" 
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"></SCRIPT>
+
+<SCRIPT src="Deep%20Image%20Prior_files/popper.min.js" crossorigin="anonymous" 
+integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"></SCRIPT>
+
+<SCRIPT src="Deep%20Image%20Prior_files/bootstrap.min.js" 
+crossorigin="anonymous" 
+integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"></SCRIPT>
+<!-- photoswipe -->
+<SCRIPT src="Deep%20Image%20Prior_files/photoswipe.min.js"></SCRIPT>
+
+<SCRIPT src="Deep%20Image%20Prior_files/photoswipe-ui-default.min.js"></SCRIPT>
+
+<SCRIPT src="Deep%20Image%20Prior_files/img-gallery.js"></SCRIPT>
+<!-- Google Analytics -->
+<SCRIPT>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-88902601-1', 'auto');
+    ga('send', 'pageview', {
+      'page': '/deep_image_prior',
+      'title': ''
+    });
+  </SCRIPT>
+<!-- End Google Analytics --><!-- Yandex.Metrika counter -->
+<SCRIPT type=text/javascript>
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter41551219 = new Ya.Metrika({
+                      id:41551219,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </SCRIPT>
+<NOSCRIPT></NOSCRIPT></BODY></HTML>

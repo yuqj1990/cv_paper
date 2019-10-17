@@ -1,0 +1,51 @@
+.uk-notify {
+	left: 10px; top: 10px; width: 350px; position: fixed; z-index: 1040; box-sizing: border-box;
+}
+.uk-notify-bottom-right {
+	left: auto; right: 10px;
+}
+.uk-notify-top-right {
+	left: auto; right: 10px;
+}
+.uk-notify-bottom-center {
+	left: 50%; margin-left: -175px;
+}
+.uk-notify-top-center {
+	left: 50%; margin-left: -175px;
+}
+.uk-notify-bottom-center {
+	top: auto; bottom: 10px;
+}
+.uk-notify-bottom-left {
+	top: auto; bottom: 10px;
+}
+.uk-notify-bottom-right {
+	top: auto; bottom: 10px;
+}
+@media all and (max-width:479px)
+{
+.uk-notify {
+	margin: 0px; left: 10px; width: auto; right: 10px;
+}
+}
+.uk-notify-message {
+	background: rgb(68, 68, 68); padding: 15px; border-radius: 4px; border: 1px solid rgb(68, 68, 68); border-image: none; color: rgb(255, 255, 255); line-height: 22px; font-size: 16px; margin-bottom: 10px; position: relative; cursor: pointer;
+}
+.uk-notify-message > .uk-close {
+	float: right; visibility: hidden;
+}
+.uk-notify-message:hover > .uk-close {
+	visibility: visible;
+}
+.uk-notify-message-primary {
+	background: rgb(235, 247, 253); border-color: rgba(45, 112, 145, 0.3); color: rgb(45, 112, 145);
+}
+.uk-notify-message-success {
+	background: rgb(242, 250, 227); border-color: rgba(101, 159, 19, 0.3); color: rgb(101, 159, 19);
+}
+.uk-notify-message-warning {
+	background: rgb(255, 252, 235); border-color: rgba(226, 131, 39, 0.3); color: rgb(226, 131, 39);
+}
+.uk-notify-message-danger {
+	background: rgb(255, 241, 240); border-color: rgba(216, 80, 48, 0.3); color: rgb(216, 80, 48);
+}

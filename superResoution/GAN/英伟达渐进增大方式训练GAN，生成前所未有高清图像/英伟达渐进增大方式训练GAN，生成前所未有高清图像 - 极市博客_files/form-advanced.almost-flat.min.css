@@ -1,0 +1,42 @@
+.uk-form input[type=radio] {
+	background: 0px 0px; outline: 0px; border: 1px solid rgb(170, 170, 170); border-image: none; width: 14px; height: 14px; overflow: hidden; margin-top: -4px; vertical-align: middle; display: inline-block; -webkit-appearance: none;
+}
+.uk-form input[type=checkbox] {
+	background: 0px 0px; outline: 0px; border: 1px solid rgb(170, 170, 170); border-image: none; width: 14px; height: 14px; overflow: hidden; margin-top: -4px; vertical-align: middle; display: inline-block; -webkit-appearance: none;
+}
+.uk-form input[type=radio] {
+	border-radius: 50%;
+}
+.uk-form input[type=checkbox]::before {
+	display: block;
+}
+.uk-form input[type=radio]::before {
+	display: block;
+}
+.uk-form input[type=radio]:checked::before {
+	background: rgb(0, 168, 230); margin: 2px auto 0px; border-radius: 50%; width: 8px; height: 8px; content: "";
+}
+.uk-form input[type=checkbox]:checked::before {
+	text-align: center; color: rgb(0, 168, 230); line-height: 12px; font-family: FontAwesome; font-size: 12px; content: "\f00c"; -webkit-font-smoothing: antialiased;
+}
+.uk-form input[type=checkbox]:indeterminate::before {
+	text-align: center; color: rgb(0, 168, 230); line-height: 12px; font-family: FontAwesome; font-size: 12px; content: "\f00c"; -webkit-font-smoothing: antialiased;
+}
+.uk-form input[type=checkbox]:indeterminate::before {
+	content: "\f068";
+}
+.uk-form input[type=checkbox]:disabled {
+	border-color: rgb(221, 221, 221);
+}
+.uk-form input[type=radio]:disabled {
+	border-color: rgb(221, 221, 221);
+}
+.uk-form input[type=radio]:checked:disabled::before {
+	background-color: rgb(170, 170, 170);
+}
+.uk-form input[type=checkbox]:checked:disabled::before {
+	color: rgb(170, 170, 170);
+}
+.uk-form input[type=checkbox]:indeterminate:disabled::before {
+	color: rgb(170, 170, 170);
+}

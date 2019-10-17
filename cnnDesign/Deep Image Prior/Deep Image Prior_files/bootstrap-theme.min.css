@@ -1,0 +1,700 @@
+.btn-danger {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.btn-default {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.btn-info {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.btn-primary {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.btn-success {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.btn-warning {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 1px rgba(0,0,0,.075); text-shadow: 0 -1px 0 rgba(0,0,0,.2)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-danger:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-default:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-info:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-primary:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-success:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.btn-warning:active {
+	-webkit-box-shadow: inset 0 3px 5px rgba(0,0,0,.125); box-shadow: inset 0 3px 5px rgba(0,0,0,.125)
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-danger {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-default {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-info {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-primary {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-success {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.disabled {
+	-webkit-box-shadow: none; box-shadow: none
+}
+[disabled].btn-warning {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-danger {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-default {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-info {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-primary {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-success {
+	-webkit-box-shadow: none; box-shadow: none
+}
+FIELDSET[disabled] .btn-warning {
+	-webkit-box-shadow: none; box-shadow: none
+}
+.btn-danger .badge {
+	text-shadow: none
+}
+.btn-default .badge {
+	text-shadow: none
+}
+.btn-info .badge {
+	text-shadow: none
+}
+.btn-primary .badge {
+	text-shadow: none
+}
+.btn-success .badge {
+	text-shadow: none
+}
+.btn-warning .badge {
+	text-shadow: none
+}
+.active {
+	BACKGROUND-IMAGE: none
+}
+.btn:active {
+	BACKGROUND-IMAGE: none
+}
+.btn-default {
+	BORDER-TOP-COLOR: #ccc; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #ccc; BORDER-BOTTOM-COLOR: #ccc; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #ccc; text-shadow: 0 1px 0 #fff
+}
+.btn-default:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #e0e0e0
+}
+.btn-default:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #e0e0e0
+}
+.active {
+	BORDER-TOP-COLOR: #dbdbdb; BORDER-LEFT-COLOR: #dbdbdb; BORDER-BOTTOM-COLOR: #dbdbdb; BORDER-RIGHT-COLOR: #dbdbdb; BACKGROUND-COLOR: #e0e0e0
+}
+.btn-default:active {
+	BORDER-TOP-COLOR: #dbdbdb; BORDER-LEFT-COLOR: #dbdbdb; BORDER-BOTTOM-COLOR: #dbdbdb; BORDER-RIGHT-COLOR: #dbdbdb; BACKGROUND-COLOR: #e0e0e0
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].btn-default {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].btn-default:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].btn-default:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+[disabled].btn-default:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .btn-default {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .btn-default:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .btn-default:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+FIELDSET[disabled] .btn-default:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #e0e0e0
+}
+.btn-primary {
+	BORDER-TOP-COLOR: #245580; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #245580; BORDER-BOTTOM-COLOR: #245580; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #245580
+}
+.btn-primary:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #265a88
+}
+.btn-primary:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #265a88
+}
+.active {
+	BORDER-TOP-COLOR: #245580; BORDER-LEFT-COLOR: #245580; BORDER-BOTTOM-COLOR: #245580; BORDER-RIGHT-COLOR: #245580; BACKGROUND-COLOR: #265a88
+}
+.btn-primary:active {
+	BORDER-TOP-COLOR: #245580; BORDER-LEFT-COLOR: #245580; BORDER-BOTTOM-COLOR: #245580; BORDER-RIGHT-COLOR: #245580; BACKGROUND-COLOR: #265a88
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].btn-primary {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].btn-primary:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].btn-primary:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+[disabled].btn-primary:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .btn-primary {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .btn-primary:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .btn-primary:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+FIELDSET[disabled] .btn-primary:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #265a88
+}
+.btn-success {
+	BORDER-TOP-COLOR: #3e8f3e; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #3e8f3e; BORDER-BOTTOM-COLOR: #3e8f3e; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #3e8f3e
+}
+.btn-success:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #419641
+}
+.btn-success:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #419641
+}
+.active {
+	BORDER-TOP-COLOR: #3e8f3e; BORDER-LEFT-COLOR: #3e8f3e; BORDER-BOTTOM-COLOR: #3e8f3e; BORDER-RIGHT-COLOR: #3e8f3e; BACKGROUND-COLOR: #419641
+}
+.btn-success:active {
+	BORDER-TOP-COLOR: #3e8f3e; BORDER-LEFT-COLOR: #3e8f3e; BORDER-BOTTOM-COLOR: #3e8f3e; BORDER-RIGHT-COLOR: #3e8f3e; BACKGROUND-COLOR: #419641
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].btn-success {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].btn-success:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].btn-success:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+[disabled].btn-success:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .btn-success {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .btn-success:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .btn-success:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+FIELDSET[disabled] .btn-success:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #419641
+}
+.btn-info {
+	BORDER-TOP-COLOR: #28a4c9; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #28a4c9; BORDER-BOTTOM-COLOR: #28a4c9; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #28a4c9
+}
+.btn-info:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #2aabd2
+}
+.btn-info:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #2aabd2
+}
+.active {
+	BORDER-TOP-COLOR: #28a4c9; BORDER-LEFT-COLOR: #28a4c9; BORDER-BOTTOM-COLOR: #28a4c9; BORDER-RIGHT-COLOR: #28a4c9; BACKGROUND-COLOR: #2aabd2
+}
+.btn-info:active {
+	BORDER-TOP-COLOR: #28a4c9; BORDER-LEFT-COLOR: #28a4c9; BORDER-BOTTOM-COLOR: #28a4c9; BORDER-RIGHT-COLOR: #28a4c9; BACKGROUND-COLOR: #2aabd2
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].btn-info {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].btn-info:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].btn-info:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+[disabled].btn-info:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .btn-info {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .btn-info:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .btn-info:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+FIELDSET[disabled] .btn-info:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #2aabd2
+}
+.btn-warning {
+	BORDER-TOP-COLOR: #e38d13; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #e38d13; BORDER-BOTTOM-COLOR: #e38d13; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #e38d13
+}
+.btn-warning:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #eb9316
+}
+.btn-warning:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #eb9316
+}
+.active {
+	BORDER-TOP-COLOR: #e38d13; BORDER-LEFT-COLOR: #e38d13; BORDER-BOTTOM-COLOR: #e38d13; BORDER-RIGHT-COLOR: #e38d13; BACKGROUND-COLOR: #eb9316
+}
+.btn-warning:active {
+	BORDER-TOP-COLOR: #e38d13; BORDER-LEFT-COLOR: #e38d13; BORDER-BOTTOM-COLOR: #e38d13; BORDER-RIGHT-COLOR: #e38d13; BACKGROUND-COLOR: #eb9316
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].btn-warning {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].btn-warning:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].btn-warning:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+[disabled].btn-warning:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .btn-warning {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .btn-warning:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .btn-warning:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+FIELDSET[disabled] .btn-warning:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #eb9316
+}
+.btn-danger {
+	BORDER-TOP-COLOR: #b92c28; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #b92c28; BORDER-BOTTOM-COLOR: #b92c28; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); BORDER-RIGHT-COLOR: #b92c28
+}
+.btn-danger:focus {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #c12e2a
+}
+.btn-danger:hover {
+	BACKGROUND-POSITION: 0px -15px; BACKGROUND-COLOR: #c12e2a
+}
+.active {
+	BORDER-TOP-COLOR: #b92c28; BORDER-LEFT-COLOR: #b92c28; BORDER-BOTTOM-COLOR: #b92c28; BORDER-RIGHT-COLOR: #b92c28; BACKGROUND-COLOR: #c12e2a
+}
+.btn-danger:active {
+	BORDER-TOP-COLOR: #b92c28; BORDER-LEFT-COLOR: #b92c28; BORDER-BOTTOM-COLOR: #b92c28; BORDER-RIGHT-COLOR: #b92c28; BACKGROUND-COLOR: #c12e2a
+}
+.disabled {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.disabled:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.disabled:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.disabled:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].btn-danger {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].btn-danger:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].btn-danger:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+[disabled].btn-danger:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .btn-danger {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .btn-danger:active {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .btn-danger:focus {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+FIELDSET[disabled] .btn-danger:hover {
+	BACKGROUND-IMAGE: none; BACKGROUND-COLOR: #c12e2a
+}
+.img-thumbnail {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075); box-shadow: 0 1px 2px rgba(0,0,0,.075)
+}
+.thumbnail {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075); box-shadow: 0 1px 2px rgba(0,0,0,.075)
+}
+.dropdown-menu > LI > A:focus {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0); BACKGROUND-COLOR: #e8e8e8
+}
+.dropdown-menu > LI > A:hover {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0); BACKGROUND-COLOR: #e8e8e8
+}
+.dropdown-menu > .active > A {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0); BACKGROUND-COLOR: #2e6da4
+}
+.dropdown-menu > .active > A:focus {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0); BACKGROUND-COLOR: #2e6da4
+}
+.dropdown-menu > .active > A:hover {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0); BACKGROUND-COLOR: #2e6da4
+}
+.navbar-default {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); -webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075); box-shadow: inset 0 1px 0 rgba(255,255,255,.15),0 1px 5px rgba(0,0,0,.075); border-radius: 4px
+}
+.navbar-default .navbar-nav > .active > A {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbdbdb', endColorstr='#ffe2e2e2', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075); box-shadow: inset 0 3px 9px rgba(0,0,0,.075)
+}
+.navbar-default .navbar-nav > .open > A {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdbdbdb', endColorstr='#ffe2e2e2', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.075); box-shadow: inset 0 3px 9px rgba(0,0,0,.075)
+}
+.navbar-brand {
+	text-shadow: 0 1px 0 rgba(255,255,255,.25)
+}
+.navbar-nav > LI > A {
+	text-shadow: 0 1px 0 rgba(255,255,255,.25)
+}
+.navbar-inverse {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(enabled=false); border-radius: 4px
+}
+.navbar-inverse .navbar-nav > .active > A {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.25); box-shadow: inset 0 3px 9px rgba(0,0,0,.25)
+}
+.navbar-inverse .navbar-nav > .open > A {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff080808', endColorstr='#ff0f0f0f', GradientType=0); -webkit-box-shadow: inset 0 3px 9px rgba(0,0,0,.25); box-shadow: inset 0 3px 9px rgba(0,0,0,.25)
+}
+.navbar-inverse .navbar-brand {
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+.navbar-inverse .navbar-nav > LI > A {
+	text-shadow: 0 -1px 0 rgba(0,0,0,.25)
+}
+.navbar-fixed-bottom {
+	border-radius: 0
+}
+.navbar-fixed-top {
+	border-radius: 0
+}
+.navbar-static-top {
+	border-radius: 0
+}
+
+@media Unknown    
+{
+.navbar .navbar-nav .open .dropdown-menu > .active > A {
+	BACKGROUND-REPEAT: repeat-x; COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0)
+}
+.navbar .navbar-nav .open .dropdown-menu > .active > A:focus {
+	BACKGROUND-REPEAT: repeat-x; COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0)
+}
+.navbar .navbar-nav .open .dropdown-menu > .active > A:hover {
+	BACKGROUND-REPEAT: repeat-x; COLOR: #fff; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0)
+}
+    }
+.alert {
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05); box-shadow: inset 0 1px 0 rgba(255,255,255,.25),0 1px 2px rgba(0,0,0,.05); text-shadow: 0 1px 0 rgba(255,255,255,.2)
+}
+.alert-success {
+	BORDER-TOP-COLOR: #b2dba1; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #b2dba1; BORDER-BOTTOM-COLOR: #b2dba1; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffc8e5bc', GradientType=0); BORDER-RIGHT-COLOR: #b2dba1
+}
+.alert-info {
+	BORDER-TOP-COLOR: #9acfea; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #9acfea; BORDER-BOTTOM-COLOR: #9acfea; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffb9def0', GradientType=0); BORDER-RIGHT-COLOR: #9acfea
+}
+.alert-warning {
+	BORDER-TOP-COLOR: #f5e79e; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #f5e79e; BORDER-BOTTOM-COLOR: #f5e79e; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fff8efc0', GradientType=0); BORDER-RIGHT-COLOR: #f5e79e
+}
+.alert-danger {
+	BORDER-TOP-COLOR: #dca7a7; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #dca7a7; BORDER-BOTTOM-COLOR: #dca7a7; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffe7c3c3', GradientType=0); BORDER-RIGHT-COLOR: #dca7a7
+}
+.progress {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffebebeb', endColorstr='#fff5f5f5', GradientType=0)
+}
+.progress-bar {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff286090', GradientType=0)
+}
+.progress-bar-success {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5cb85c', endColorstr='#ff449d44', GradientType=0)
+}
+.progress-bar-info {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bc0de', endColorstr='#ff31b0d5', GradientType=0)
+}
+.progress-bar-warning {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffec971f', GradientType=0)
+}
+.progress-bar-danger {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9534f', endColorstr='#ffc9302c', GradientType=0)
+}
+.progress-bar-striped {
+	
+}
+.list-group {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.075); box-shadow: 0 1px 2px rgba(0,0,0,.075); border-radius: 4px
+}
+.active {
+	BORDER-TOP-COLOR: #2b669a; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #2b669a; BORDER-BOTTOM-COLOR: #2b669a; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0); BORDER-RIGHT-COLOR: #2b669a; text-shadow: 0 -1px 0 #286090
+}
+.active:focus {
+	BORDER-TOP-COLOR: #2b669a; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #2b669a; BORDER-BOTTOM-COLOR: #2b669a; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0); BORDER-RIGHT-COLOR: #2b669a; text-shadow: 0 -1px 0 #286090
+}
+.active:hover {
+	BORDER-TOP-COLOR: #2b669a; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #2b669a; BORDER-BOTTOM-COLOR: #2b669a; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2b669a', GradientType=0); BORDER-RIGHT-COLOR: #2b669a; text-shadow: 0 -1px 0 #286090
+}
+.active .badge {
+	text-shadow: none
+}
+.active:focus .badge {
+	text-shadow: none
+}
+.active:hover .badge {
+	text-shadow: none
+}
+.panel {
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05); box-shadow: 0 1px 2px rgba(0,0,0,.05)
+}
+.panel-default > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0)
+}
+.panel-primary > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff337ab7', endColorstr='#ff2e6da4', GradientType=0)
+}
+.panel-success > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffdff0d8', endColorstr='#ffd0e9c6', GradientType=0)
+}
+.panel-info > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffd9edf7', endColorstr='#ffc4e3f3', GradientType=0)
+}
+.panel-warning > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffcf8e3', endColorstr='#fffaf2cc', GradientType=0)
+}
+.panel-danger > .panel-heading {
+	BACKGROUND-REPEAT: repeat-x; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff2dede', endColorstr='#ffebcccc', GradientType=0)
+}
+.well {
+	BORDER-TOP-COLOR: #dcdcdc; BACKGROUND-REPEAT: repeat-x; BORDER-LEFT-COLOR: #dcdcdc; BORDER-BOTTOM-COLOR: #dcdcdc; FILTER: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffe8e8e8', endColorstr='#fff5f5f5', GradientType=0); BORDER-RIGHT-COLOR: #dcdcdc; -webkit-box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.1); box-shadow: inset 0 1px 3px rgba(0,0,0,.05),0 1px 0 rgba(255,255,255,.1)
+}

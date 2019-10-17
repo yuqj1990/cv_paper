@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dmitry Ulyanov – Blog</title>
+
+        <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="Blog">
+    <meta property="og:description" content="Blog" />
+    
+    <meta name="author" content="Dmitry Ulyanov" />
+
+    
+    
+
+    
+    
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="Dmitry Ulyanov - Blog" href="/feed.xml" />
+
+    <!-- Begin Jekyll SEO tag v2.3.0 -->
+<title>dmitryulyanov.github.io | Blog</title>
+<meta property="og:title" content="dmitryulyanov.github.io" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Blog" />
+<meta property="og:description" content="Blog" />
+<link rel="canonical" href="https://dmitryulyanov.github.io/" />
+<meta property="og:url" content="https://dmitryulyanov.github.io/" />
+<meta property="og:site_name" content="dmitryulyanov.github.io" />
+<script type="application/ld+json">
+{"name":"dmitryulyanov.github.io","description":"Blog","author":null,"@type":"WebSite","url":"https://dmitryulyanov.github.io/","image":null,"publisher":null,"headline":"dmitryulyanov.github.io","dateModified":null,"datePublished":null,"sameAs":null,"mainEntityOfPage":null,"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  </head>
+
+  <body>
+    <div class="wrapper-masthead">
+      <div class="container">
+        <header class="masthead clearfix">
+          <a href="/" class="site-avatar"><img src="/assets/photo.png" alt="avatar" /></a>
+
+          <div class="site-info">
+            <h1 class="site-name"><a href="/">Dmitry Ulyanov</a></h1>
+            <p class="site-description">Blog</p>
+          </div>
+
+          <nav>
+            <a href="/">Blog</a>
+            <a href="/about">About</a>
+          </nav>
+        </header>
+      </div>
+    </div>
+
+    <div id="main" role="main" class="container">
+      <div class="posts">
+  
+    <article class="post">
+
+      <h1><a href="/if-you-are-lazy-to-install-slurm/">Handling a queue of GPU jobs without resource manager</a></h1>
+
+      <div class="entry">
+        <p>How do you execute a lot of experiments? Say you want to run as many as you can over night, and examine them in the morning. The jobs can be executed one after the other as easy as <code>bash run.sh</code> when you have a single GPU. The problems arise when you have more than one so you want to make sure each GPU is occupied with exactly one task at a time and new task is fetched when previous finished. A clever way would be to use a resource manager such as <code>slurm</code> or <code>torque</code>, but I leave it as a future work for myself. This post shows a possible workaround for a local workstation using a simple python script.</p>
+
+
+      </div>
+
+      <a href="/if-you-are-lazy-to-install-slurm/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/audio-texture-synthesis-and-style-transfer/">Audio texture synthesis and style transfer</a></h1>
+
+      <div class="entry">
+        <p class="byline">
+    by <i>Dmitry Ulyanov</i> and <i>Vadim Lebedev</i>
+</p>
+<hr />
+
+<p>We present an extension of <a href="https://arxiv.org/abs/1505.07376">texture synthesis</a> and <a href="https://arxiv.org/abs/1508.06576">style transfer</a> method of Leon Gatys <em>et al.</em> for audio. We have developed the same code for three frameworks (well, it is cold in Moscow), choose your favorite:</p>
+
+<center>
+
+<table width="360" cellspacing="0" cellpadding="0" style="text-align: center; vertical-align: middle;">
+  <tr>
+    <td width="120"></td>
+    <td width="120"></td>
+    <td width="120"></td>
+  </tr>
+  <tr>
+    <td>
+      <a href="https://github.com/DmitryUlyanov/neural-style-audio-torch">Torch</a>
+    </td>
+    <td>
+      <a href="https://github.com/DmitryUlyanov/neural-style-audio-tf">TensorFlow</a>
+    </td>
+    <td>
+      <a href="https://github.com/vadim-v-lebedev/audio_style_tranfer">Lasagne</a>
+    </td>
+  </tr>
+</table>
+</center>
+
+
+      </div>
+
+      <a href="/audio-texture-synthesis-and-style-transfer/" class="read-more">Read More</a>
+    </article>
+  
+    <article class="post">
+
+      <h1><a href="/feed-forward-neural-doodle/">Feed-forward neural doodle</a></h1>
+
+      <div class="entry">
+        <p>Sometimes you sigh you cannot draw, aren’t you? It takes time to master the skills, and you have more important things to do :) What if you could only sketch the picture like a 3-years old and everything else is done by a computer so your sketch looks like a real painting? It will certainly happen in near future. In fact several algorithms that do the thing very well were proposed recently, yet they take at least several minutes to render your masterpiece using a high-end hardware. We make a step towards making such things available for everybody and present an <a href="https://likemo.net/">online demo</a> of our fast algorithm.</p>
+
+
+      </div>
+
+      <a href="/feed-forward-neural-doodle/" class="read-more">Read More</a>
+    </article>
+  
+</div>
+
+    </div>
+
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          
+<a href="mailto:dmitry.ulyanov.msu@gmail.com"><i class="svg-icon email"></i></a>
+
+
+<a href="https://github.com/DmitryUlyanov"><i class="svg-icon github"></i></a>
+
+<a href="https://www.linkedin.com/in/dulyanov"><i class="svg-icon linkedin"></i></a>
+
+<a href="/feed.xml"><i class="svg-icon rss"></i></a>
+<a href="https://www.twitter.com/DmitryUlyanovML"><i class="svg-icon twitter"></i></a>
+
+
+
+        </footer>
+      </div>
+    </div>
+
+    <script>
+    document.addEventListener('play', function (e) {
+      var audios = document.getElementsByTagName('audio');
+      for (var i = 0, len = audios.length; i < len; i++) {
+        if (audios[i] != e.target) {
+          audios[i].pause();
+          // audios[i].currentTime = 0.0;
+        }
+      }
+    }, true);
+    </script>
+
+    <script type="text/javascript"> 
+      // Show button
+      function look(type){ 
+      param=document.getElementById(type); 
+      if(param.style.display == "none") param.style.display = "block"; 
+      else param.style.display = "none" 
+      } 
+    </script> 
+
+    
+    
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-88902601-1', 'auto');
+		ga('send', 'pageview', {
+		  'page': '/',
+		  'title': ''
+		});
+	</script>
+	<!-- End Google Analytics -->
+
+
+
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter41551219 = new Ya.Metrika({
+	                    id:41551219,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/41551219" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+
+  </body>
+</html>

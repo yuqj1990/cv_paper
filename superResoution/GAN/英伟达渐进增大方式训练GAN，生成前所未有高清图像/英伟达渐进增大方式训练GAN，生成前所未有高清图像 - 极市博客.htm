@@ -1,0 +1,75 @@
+﻿<!DOCTYPE HTML>
+<!-- saved from url=(0046)http://cvmart.net/community/article/detail/130 -->
+<!DOCTYPE html PUBLIC "" ""><HTML><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+   <TITLE>英伟达渐进增大方式训练GAN，生成前所未有高清图像 - 极市博客</TITLE>   
+<META charset="utf-8">   
+<META http-equiv="X-UA-Compatible" content="IE=edge">   
+<META http-equiv="content-security-policy" content="default-src 'self' ws: 'unsafe-inline' 'unsafe-eval' *.wx.qq.com *.youku.com *.extremevision.com.cn hm.baidu.com; img-src * data:"> 
+  
+<META name="baidu-site-verification" content="AqTbwRrNu7">   
+<META name="description" content="NVIDIA Research 发布的GAN论文，通过使用逐渐增大的GAN网络和精心处理的CelebA-HQ数据集，实现了效果令人惊叹的生成图像。论文、数据集、代码都已经开放可获取。"> 
+  
+<META name="keywords" content="GAN,英伟达，计算机视觉">   
+<META name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"> 
+  <LINK href="http://static2.extremevision.com.cn/images/talc/favicon.ico" rel="icon"> 
+  <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/summernote.css" rel="stylesheet"> 
+  <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/uikit.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/slideshow.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/dotnav.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/slidenav.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/notify.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/form-password.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/form-advanced.almost-flat.min.css" 
+rel="stylesheet">   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/tooltip.almost-flat.min.css" 
+rel="stylesheet">   <!-- for summernote -->   <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/bootstrap.min.css" 
+rel="stylesheet">     <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/app.7e7b80.css" 
+rel="stylesheet">     <LINK href="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/style.css" 
+rel="stylesheet"> 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18838"></HEAD> 
+<BODY>
+<DIV class="uk-position-relative" id="app"></DIV>
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/jweixin-1.2.0.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/jquery.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/uikit.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/slideshow.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/slideset.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/notify.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/form-password.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/parallax.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/tooltip.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/pagination.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/FileSaver.min.js"></SCRIPT>
+   <!--for summernote-->   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/bootstrap.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/summernote.rc.min.js"></SCRIPT>
+   
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/summernote-zh-CN.js"></SCRIPT>
+     
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/mainifest.a1bf24.js"></SCRIPT>
+     
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/vendor.1635c1.js"></SCRIPT>
+     
+<SCRIPT src="英伟达渐进增大方式训练GAN，生成前所未有高清图像%20-%20极市博客_files/app.afe8f2.js"></SCRIPT>
+     
+<SCRIPT>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?fb55a53a3d2709587d286335e1755b6c";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </SCRIPT>
+ </BODY></HTML>
